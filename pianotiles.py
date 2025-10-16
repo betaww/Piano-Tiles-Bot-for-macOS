@@ -22,8 +22,8 @@ def keytap(vk):
 # Select game area
 pyautogui.PAUSE = 0
 pyautogui.FAILSAFE = False
-print("Move mouse to TOP-LEFT corner and press Enter"); input(); p1 = pyautogui.position()
-print("Move mouse to BOTTOM-RIGHT corner and press Enter"); input(); p2 = pyautogui.position()
+print("Move mouse to TOP-LEFT corner of the game area and press Enter"); input(); p1 = pyautogui.position()
+print("Move mouse to BOTTOM-RIGHT corner of the game area and press Enter"); input(); p2 = pyautogui.position()
 LEFT, TOP = p1.x, p1.y
 W, H = p2.x - p1.x, p2.y - p1.y
 lane_w = W / 4.0
